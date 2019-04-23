@@ -45,3 +45,42 @@ footer p {
 }
 
 /* media query for larger screen */
+@media screen and (min-width: 768px) {
+  body {
+    width: 960px;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  footer {
+    height: 150px;
+    width: 760px;
+    float: left;
+  }
+  .hero {
+    float: left;
+    width: 200px;
+    height: 600px;
+  }
+  .article {
+    float: left;
+    width: 380px;
+    height: 200px;
+  }
+
+  .container {
+    float: left;
+    border: none;
+  }
+
+  .subSection {
+    width: 190px;
+    height: 250px;
+  }
+
+  .spacer {
+    display: none;
+  }
+}
