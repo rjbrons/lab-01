@@ -1,0 +1,47 @@
+/* 'standard' css for mobile-first site */
+div p {
+  vertical-align: middle;
+  margin-top: 60px;
+}
+
+.hero {
+  height: 150px;
+}
+
+.article {
+  height: 125px;
+}
+
+.container {
+  border-top: none;
+  border-bottom: none;
+}
+
+.subSection p {
+  margin-top: 120px;
+}
+
+.subSection {
+  width: 50%;
+  float: left;
+  height: 250px;
+}
+
+.spacer {
+  height: 500px;
+}
+
+header {
+  height: 75px;
+}
+
+footer {
+  height: 80px;
+}
+
+header p,
+footer p {
+  margin-top: 35px;
+}
+
+/* media query for larger screen */
