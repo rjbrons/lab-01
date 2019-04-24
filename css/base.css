@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  width: 480px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+/* delete this -its just for layout purposes */
+div,
+header,
+footer {
+  border: thin solid darkgray;
+}
