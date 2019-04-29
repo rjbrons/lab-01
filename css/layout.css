@@ -1,48 +1,44 @@
 /* 'standard' css for mobile-first site */
-div p {
-  vertical-align: middle;
-  margin-top: 60px;
+
+p {
+  align-self: center;
 }
-/* make this into "line-height" equal to div width */
 
 .hero {
+  display: flex;
+  justify-content: center;
   height: 150px;
 }
 
 .article {
+  display: flex;
+  justify-content: center;
   height: 125px;
 }
 
 .container {
+  display: flex;
   border-top: none;
   border-bottom: none;
 }
 
-.subSection p {
-  margin-top: 120px;
-}
-
 .subSection {
+  display: flex;
+  justify-content: center;
   width: 50%;
-  float: left;
   height: 250px;
 }
 
-.spacer {
-  height: 500px;
-}
-
 header {
+  display: flex;
+  justify-content: center;
   height: 75px;
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   height: 80px;
-}
-
-header p,
-footer p {
-  margin-top: 35px;
 }
 
 /* media query for larger screen */
