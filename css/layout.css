@@ -3,6 +3,7 @@ div p {
   vertical-align: middle;
   margin-top: 60px;
 }
+/* make this into "line-height" equal to div width */
 
 .hero {
   height: 150px;

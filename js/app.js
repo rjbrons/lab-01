@@ -172,3 +172,15 @@ hdr.style.backgroundColor = CSS_COLOR_NAMES[randomColor()];
 let ftr = document.getElementsByTagName('footer')[0];
 ftr.style.backgroundColor = CSS_COLOR_NAMES[randomColor()];
 // debugger;
+
+// from stack overflow: https://stackoverflow.com/questions/13015719/optional-javascript-execution-based-on-media-queries
+
+// var jmediaquery = window.matchMedia("(orientation: portrait)");
+// jmediaquery.addListener(handleOrientationChange);
+// handleOrientationChange(jmediaquery);
+
+// function handleOrientationChange(jmediaquery) {
+//     if (jmediaquery.matches) {
+//         // orientation changed
+//     }
+// }
