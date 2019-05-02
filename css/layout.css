@@ -1,10 +1,30 @@
 /* 'standard' css for mobile-first site */
 
+.article1 {
+  background-color: midnightblue;
+}
+.article2 {
+  background-color: lightsteelblue;
+}
+.subsec1 {
+  background-color: lightslategray;
+}
+.subsec2 {
+  background-color: darkgrey;
+}
+.subsec3 {
+  background-color: slategrey;
+}
+.subsec4 {
+  background-color: tan;
+}
+
 p {
   align-self: center;
 }
 
 .hero {
+  background-color: lightgray;
   display: flex;
   justify-content: center;
   height: 150px;
@@ -30,33 +50,96 @@ p {
 }
 
 header {
+  background-color: grey;
   display: flex;
   justify-content: center;
   height: 75px;
 }
 
 footer {
+  background-color: darkslategrey;
   display: flex;
   justify-content: center;
   height: 80px;
 }
 
+/* media query 480 - 768 for tablet */
+@media screen and (min-width: 480px) {
+  header {
+    background-color: beige;
+  }
+
+  footer {
+    background-color: lightblue;
+  }
+
+  .hero {
+    background-color: cornflowerblue;
+  }
+
+  .article1 {
+    background-color: lightgoldenrodyellow;
+  }
+  .article2 {
+    background-color: burlywood;
+  }
+  .subsec1 {
+    background-color: orchid;
+  }
+
+  .subsec2 {
+    background-color: maroon;
+  }
+  .subsec3 {
+    background-color: lightseagreen;
+  }
+  .subsec4 {
+    background-color: darkgreen;
+  }
+}
 /* media query for desktop */
 @media screen and (min-width: 768px) {
+  body {
+    color: white;
+  }
+
+  .article1 {
+    background-color: orangered;
+  }
+  .article2 {
+    background-color: orange;
+  }
+  .subsec1 {
+    background-color: yellow;
+  }
+
+  .subsec2 {
+    background-color: yellowgreen;
+  }
+  .subsec3 {
+    background-color: green;
+  }
+  .subsec4 {
+    background-color: blue;
+  }
+
   body {
     width: 960px;
   }
 
   header {
+    background-color: red;
     height: 100px;
   }
 
   footer {
+    background-color: indigo;
     height: 150px;
     width: 760px;
     float: left;
   }
   .hero {
+    background-color: black;
     float: left;
     width: 200px;
     height: 600px;
