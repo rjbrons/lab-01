@@ -164,7 +164,6 @@ function randomColor() {
 function randomizeBackgrounds() {
   let divs = document.getElementsByTagName('div');
   for (let i = 0; i < divs.length; i++) {
-    // debugger;
     divs[i].style.backgroundColor = CSS_COLOR_NAMES[randomColor()];
   }
 
@@ -175,19 +174,7 @@ function randomizeBackgrounds() {
   ftr.style.backgroundColor = CSS_COLOR_NAMES[randomColor()];
 }
 randomizeBackgrounds();
-// debugger;
 
-// from stack overflow: https://stackoverflow.com/questions/13015719/optional-javascript-execution-based-on-media-queries
-
-// var jmediaquery = window.matchMedia('(min-width: 768px)');
-// jmediaquery.addListener(handleChange);
-// handleChange(jmediaquery);
-
-// function handleChange(jmediaquery) {
-//   if (jmediaquery.matches) {
-//     //randomizeBackgrounds();
-//   }
-// }
 function changeColors() {
   if (window.innerWidth > 765 && window.innerWidth < 775)
     randomizeBackgrounds();

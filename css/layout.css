@@ -41,7 +41,7 @@ footer {
   height: 80px;
 }
 
-/* media query for larger screen */
+/* media query for desktop */
 @media screen and (min-width: 768px) {
   body {
     width: 960px;
