@@ -160,27 +160,37 @@ const CSS_COLOR_NAMES = [
 function randomColor() {
   return Math.floor(Math.random() * CSS_COLOR_NAMES.length);
 }
-let divs = document.getElementsByTagName('div');
-for (let i = 0; i < divs.length; i++) {
-  // debugger;
-  divs[i].style.backgroundColor = CSS_COLOR_NAMES[randomColor()];
+
+function randomizeBackgrounds() {
+  let divs = document.getElementsByTagName('div');
+  for (let i = 0; i < divs.length; i++) {
+    // debugger;
+    divs[i].style.backgroundColor = CSS_COLOR_NAMES[randomColor()];
+  }
+
+  let hdr = document.getElementsByTagName('header')[0];
+  hdr.style.backgroundColor = CSS_COLOR_NAMES[randomColor()];
+
+  let ftr = document.getElementsByTagName('footer')[0];
+  ftr.style.backgroundColor = CSS_COLOR_NAMES[randomColor()];
 }
-
-let hdr = document.getElementsByTagName('header')[0];
-hdr.style.backgroundColor = CSS_COLOR_NAMES[randomColor()];
-
-let ftr = document.getElementsByTagName('footer')[0];
-ftr.style.backgroundColor = CSS_COLOR_NAMES[randomColor()];
+randomizeBackgrounds();
 // debugger;
 
 // from stack overflow: https://stackoverflow.com/questions/13015719/optional-javascript-execution-based-on-media-queries
 
-// var jmediaquery = window.matchMedia("(orientation: portrait)");
-// jmediaquery.addListener(handleOrientationChange);
-// handleOrientationChange(jmediaquery);
+// var jmediaquery = window.matchMedia('(min-width: 768px)');
+// jmediaquery.addListener(handleChange);
+// handleChange(jmediaquery);
 
-// function handleOrientationChange(jmediaquery) {
-//     if (jmediaquery.matches) {
-//         // orientation changed
-//     }
+// function handleChange(jmediaquery) {
+//   if (jmediaquery.matches) {
+//     //randomizeBackgrounds();
+//   }
 // }
+function changeColors() {
+  if (window.innerWidth > 765 && window.innerWidth < 775)
+    randomizeBackgrounds();
+}
+
+window.addEventListener('resize', changeColors);
