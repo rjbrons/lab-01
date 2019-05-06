@@ -103,6 +103,11 @@ footer {
     color: white;
   }
 
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
   .article1 {
     background-color: orangered;
   }
@@ -136,31 +141,47 @@ footer {
     background-color: indigo;
     height: 150px;
     width: 760px;
-    float: left;
+    justify-self: flex-end;
   }
   .hero {
     background-color: black;
-    float: left;
+    flex-grow: 3;
     width: 200px;
     height: 600px;
   }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .article-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-start;
+  }
+
+  .subsection-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-start;
+  }
+
   .article {
-    float: left;
+    align-self: flex-end;
     width: 380px;
     height: 200px;
   }
 
   .container {
-    float: left;
     border: none;
   }
 
   .subSection {
     width: 190px;
     height: 250px;
-  }
-
-  .spacer {
-    display: none;
   }
 }
