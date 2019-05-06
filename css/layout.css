@@ -1,87 +1,187 @@
 /* 'standard' css for mobile-first site */
-div p {
-  vertical-align: middle;
-  margin-top: 60px;
+
+.article1 {
+  background-color: midnightblue;
 }
-/* make this into "line-height" equal to div width */
+.article2 {
+  background-color: lightsteelblue;
+}
+.subsec1 {
+  background-color: lightslategray;
+}
+.subsec2 {
+  background-color: darkgrey;
+}
+.subsec3 {
+  background-color: slategrey;
+}
+.subsec4 {
+  background-color: tan;
+}
+
+p {
+  align-self: center;
+}
 
 .hero {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
   height: 150px;
 }
 
 .article {
+  display: flex;
+  justify-content: center;
   height: 125px;
 }
 
 .container {
+  display: flex;
   border-top: none;
   border-bottom: none;
 }
 
-.subSection p {
-  margin-top: 120px;
-}
-
 .subSection {
+  display: flex;
+  justify-content: center;
   width: 50%;
-  float: left;
   height: 250px;
 }
 
-.spacer {
-  height: 500px;
-}
-
 header {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
   height: 75px;
 }
 
 footer {
+  background-color: darkslategrey;
+  display: flex;
+  justify-content: center;
   height: 80px;
 }
 
-header p,
-footer p {
-  margin-top: 35px;
-}
+/* media query 480 - 768 for tablet */
+@media screen and (min-width: 480px) {
+  header {
+    background-color: beige;
+  }
 
-/* media query for larger screen */
+  footer {
+    background-color: lightblue;
+  }
+
+  .hero {
+    background-color: cornflowerblue;
+  }
+
+  .article1 {
+    background-color: lightgoldenrodyellow;
+  }
+  .article2 {
+    background-color: burlywood;
+  }
+  .subsec1 {
+    background-color: orchid;
+  }
+
+  .subsec2 {
+    background-color: maroon;
+  }
+  .subsec3 {
+    background-color: lightseagreen;
+  }
+  .subsec4 {
+    background-color: darkgreen;
+  }
+}
+/* media query for desktop */
 @media screen and (min-width: 768px) {
+  body {
+    color: white;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article1 {
+    background-color: orangered;
+  }
+  .article2 {
+    background-color: orange;
+  }
+  .subsec1 {
+    background-color: yellow;
+  }
+
+  .subsec2 {
+    background-color: yellowgreen;
+  }
+  .subsec3 {
+    background-color: green;
+  }
+  .subsec4 {
+    background-color: blue;
+  }
+
   body {
     width: 960px;
   }
 
   header {
+    background-color: red;
     height: 100px;
   }
 
   footer {
+    background-color: indigo;
     height: 150px;
     width: 760px;
-    float: left;
+    justify-self: flex-end;
   }
   .hero {
-    float: left;
+    background-color: black;
+    flex-grow: 3;
     width: 200px;
     height: 600px;
   }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .article-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-start;
+  }
+
+  .subsection-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-start;
+  }
+
   .article {
-    float: left;
+    align-self: flex-end;
     width: 380px;
     height: 200px;
   }
 
   .container {
-    float: left;
     border: none;
   }
 
   .subSection {
     width: 190px;
     height: 250px;
-  }
-
-  .spacer {
-    display: none;
   }
 }
